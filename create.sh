@@ -83,3 +83,11 @@ echo "Permissions..."
 stardog-admin role permission public
 stardog-admin role permission authenticated
 stardog-admin role permission editor
+
+echo "Check results...\n"
+echo "Public user first:\n"
+
+stardog query --username user_public cube-permission-test query-all.rq
+
+echo "\nAuthenticated user:\n"
+stardog query --username user_authenticated cube-permission-test query-all.rq
