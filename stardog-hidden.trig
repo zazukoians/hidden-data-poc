@@ -1,0 +1,27 @@
+# Graph for http://example.org/bafu
+<http://example.org/bafu> {
+    <http://example.org/bafu/resource1> a <http://example.org/TypeA> .
+    <http://example.org/bafu/resource1> <http://example.org/property1> "Value1" .
+    <http://example.org/bafu/resource2> <http://example.org/relatedTo> <http://example.org/bafu/resource1> .
+}
+
+# Hidden Graph for http://example.org/bafu
+<http://example.org/bafu/hidden> {
+    <http://example.org/bafu/hidden/resource3> a <http://example.org/TypeB> .
+    <http://example.org/bafu/hidden/resource3> <http://example.org/property2> "HiddenValue1" .
+    <http://example.org/bafu/hidden/resource4> <http://example.org/relatedTo> <http://example.org/bafu/hidden/resource3> .
+}
+
+# Graph for http://example.org/bfe
+<http://example.org/bfe> {
+    <http://example.org/bfe/resource5> a <http://example.org/TypeC> .
+    <http://example.org/bfe/resource5> <http://example.org/property3> "Value2" .
+    <http://example.org/bfe/resource6> <http://example.org/relatedTo> <http://example.org/bfe/resource5> .
+}
+
+# Hidden Graph for http://example.org/bfe
+<http://example.org/bfe/hidden> {
+    <http://example.org/bfe/hidden/resource7> a <http://example.org/TypeD> .
+    <http://example.org/bfe/hidden/resource7> <http://example.org/property4> "HiddenValue2" .
+    <http://example.org/bfe/hidden/resource8> <http://example.org/relatedTo> <http://example.org/bfe/hidden/resource7> .
+}
